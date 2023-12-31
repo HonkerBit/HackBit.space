@@ -2,12 +2,12 @@
   {
     "icon": "Blog",
     "name": "博客",
-    "link": "https://blog.helloylh.com/"
+    "link": "https://bitlogs.cn"
   },
   {
     "icon": "Cloud",
     "name": "网盘",
-    "link": "https://pan.helloylh.com/"
+    "link": "http://scec.hppro1.hpnu.cn"
   },
   {
     "icon": "Robot",
@@ -17,17 +17,17 @@
   {
     "icon": "Compass",
     "name": "起始页",
-    "link": "https://login.helloylh.com"
+    "link": "https://hackbit.space"
   },
   {
     "icon": "Book",
     "name": "CSDN",
-    "link": "https://blog.csdn.net/jj6666djdbbd?type=blog"
+    "link": "https://blog.csdn.net/2202_75762088?spm=1000.2115.3001.5343"
   },
   {
     "icon": "Tv",
     "name": "BiliBili",
-    "link": "https://www.bilibili.com/"
+    "link": "https://space.bilibili.com/3493116589902790?spm_id_from=333.880.0."
   }
 ]
 
