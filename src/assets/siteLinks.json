@@ -2,36 +2,32 @@
   {
     "icon": "Blog",
     "name": "博客",
-    "link": "bitlogs.cn"
+    "link": "https://blog.helloylh.com/"
   },
   {
     "icon": "Cloud",
     "name": "网盘",
-    "link": "http://csec.hppro1.hpnu.cn"
+    "link": "https://pan.helloylh.com/"
   },
   {
-    "icon": "CompactDisc",
-    "name": "音乐",
-    "link": "https://music.imsyy.top/"
+    "icon": "Robot",
+    "name": "ChatGPT",
+    "link": "https://gpt.helloylh.com/"
   },
   {
     "icon": "Compass",
     "name": "起始页",
-    "link": "https://hackbit.space"
+    "link": "https://login.helloylh.com"
   },
   {
     "icon": "Book",
-    "name": "网址集",
-    "link": "https://web.imsyy.top/"
+    "name": "CSDN",
+    "link": "https://blog.csdn.net/jj6666djdbbd?type=blog"
   },
   {
-    "icon": "Fire",
-    "name": "今日热榜",
-    "link": "https://hot.imsyy.top/"
-  },
-  {
-    "icon": "LaptopCode",
-    "name": "站点监测",
-    "link": "https://status.imsyy.top/"
+    "icon": "Tv",
+    "name": "BiliBili",
+    "link": "https://www.bilibili.com/"
   }
 ]
+

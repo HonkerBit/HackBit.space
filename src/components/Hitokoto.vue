@@ -18,12 +18,10 @@
       </div>
     </Transition>
     <!-- 一言内容 -->
-    <Transition name="el-fade-in-linear" mode="out-in">
-      <div :key="hitokotoData.text" class="content" @click="updateHitokoto">
-        <span class="text">{{ hitokotoData.text }}</span>
-        <span class="from">-「&nbsp;{{ hitokotoData.from }}&nbsp;」</span>
-      </div>
-    </Transition>
+    <div class="content" @click="updateHitokoto">
+      <span class="text">{{ hitokotoData.text }}</span>
+      <span class="from">-「&nbsp;{{ hitokotoData.from }}&nbsp;」</span>
+    </div>
   </div>
 </template>
 
@@ -45,26 +43,27 @@ const hitokotoData = reactive({
 });
 
 // 获取一言数据
-const getHitokotoData = async () => {
-  try {
-    const result = await getHitokoto();
-    hitokotoData.text = result.hitokoto;
-    hitokotoData.from = result.from;
-  } catch (error) {
-    ElMessage({
-      message: "一言获取失败",
-      icon: h(Error, {
-        theme: "filled",
-        fill: "#efefef",
-      }),
+const getHitokotoData = () => {
+  getHitokoto()
+    .then((res) => {
+      hitokotoData.text = res.hitokoto;
+      hitokotoData.from = res.from;
+    })
+    .catch(() => {
+      ElMessage({
+        message: "一言获取失败",
+        icon: h(Error, {
+          theme: "filled",
+          fill: "#efefef",
+        }),
+      });
     });
-    hitokotoData.text = "这里应该显示一句话";
-    hitokotoData.from = "無名";
-  }
 };
 
 // 更新一言数据
 const updateHitokoto = () => {
+  hitokotoData.text = "新的一言正在赶来的路上";
+  hitokotoData.from = "来源加载中";
   // 防抖
   debounce(() => {
     getHitokotoData();

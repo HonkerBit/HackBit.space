@@ -42,7 +42,7 @@
     </div>
   </div>
   <!-- 音乐列表弹窗 -->
-  <Transition name="fade" mode="out-in">
+  <Transition name="fade">
     <div class="music-list" v-show="musicListShow" @click="musicListShow = false">
       <Transition name="zoom">
         <div class="list" v-show="musicListShow" @click.stop>
@@ -54,12 +54,12 @@
             @click="musicListShow = false"
           />
           <Player
-            ref="playerRef"
             :songServer="playerData.server"
             :songType="playerData.type"
             :songId="playerData.id"
             :volume="volumeNum"
             :shuffle="false"
+            ref="playerRef"
           />
         </div>
       </Transition>
@@ -281,6 +281,12 @@ watch(
 }
 
 // 弹窗动画
+.fade-enter-active {
+  animation: fade 0.3s ease-in-out;
+}
+.fade-leave-active {
+  animation: fade 0.3s ease-in-out reverse;
+}
 .zoom-enter-active {
   animation: zoom 0.4s ease-in-out;
 }
