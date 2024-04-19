@@ -1,11 +1,4 @@
-简体中文 | [English](./README_EN.md)
 
-<p>
-<strong><h2>無名の主页</h2></strong>
-简单的小主页，原来的看够了，重新弄了一个
-</p>
-
-![無名の主页](https://s2.loli.net/2022/07/14/K5JigfvDoNewtuS.webp)
 
 >主页的 Logo 字体已经过压缩，若用本站 Logo 以外的字母会变回默认字体，这里是 [完整字体](https://file.imsyy.top/font/Other/Pacifico-Regular.ttf)
 
